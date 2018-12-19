@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!-- hierachrical definition of a character -->
+<doc>
+    <node type="freejoint" name="root" center="0 -1 0">
+		<node type="ballxyz" name="neck joint" center="0 5 0" xlimits="-20 50" ylimits="-90 90" zlimits="-20 20">
+			<geom type="box" name="neck" center="0 0.5 0" scale="0.7 1 0.7" rotation="0 0 0" color="0 1 0"/>
+			<node type="hinge" name="head vertical fod" center="0 1 0" axis="1 0 0" limits="-70 50">
+				<geom type="box" name="head" center="0 1 0" scale="2 2 2" rotation="0 0 0" color="0 1 1" />
+				<geom type="sphere" name="l eye" center="-0.5 1.5 1" scale="0.3 0.3 0.3" rotation="0 0 0" color="1 1 1"/>
+				<geom type="sphere" name="l eye black" center="-0.5 1.5 1.3" scale="0.1 0.1 0.1" rotation="0 0 0" color="0 0 0"/>
+				<geom type="sphere" name="r eye" center="0.5 1.5 1" scale="0.3 0.3 0.3" rotation="0 0 0" color="1 1 1"/>
+				<geom type="sphere" name="r eye black" center="0.5 1.5 1.3" scale="0.1 0.1 0.1" rotation="0 0 0" color="0 0 0"/>
+				<geom type="cone" name="nose" center="0 1 1" scale="0.2 0.2 0.2" rotation="0 0 0" color="0 0 1"/>
+				<geom type="box" name="mouth" center="0 0.5 1" scale="1 0.2 0.2" rotation="0 0 0" color="1 0 1"/>
+			</node>
+		</node>
+    	<geom type="box" name="torso" center="0 2.5 0" scale="5 5 2.5" rotation="0 0 0" color="1 0 0" />
+    	<node type="ballxyz" name="r shoulder" center="-2.5 5 0" xlimits="-180 80" ylimits="-180 0" zlimits="0 180">
+        	<geom type="box" name="upper r arm" center="0 -1 0" scale="0.4 2 1" rotation="0 0 0" color="0 1 0" />
+        	<node type="hinge" name="r elbow"  center="0 -2 0" axis="0 0 1" limits="0 90">
+				<geom type="box" name="lower r arm" center="0 -2 0" scale="0.4 4 1" rotation="0 0 0" color="1 0 1"/>
+			</node>
+    	</node>
+		<node type="ballxyz" name="l shoulder" center="2.5 5 0" xlimits="-180 80" ylimits="0 180" zlimits="-180 0">
+        	<geom type="box" name="upper l arm" center="0 -1 0" scale="0.4 2 1" rotation="0 0 0" color="0 1 0" />
+        	<node type="hinge" name="l elbow"  center="0 -2 0" axis="0 0 1" limits="-90 0">
+				<geom type="box" name="lower l arm" center="0 -2 0" scale="0.4 4 1" rotation="0 0 0" color="1 0 1"/>
+			</node>
+    	</node>
+		<node type="hinge" name="body r thigh" center="-1.5 0 0" axis="1 0 0" limits="-90 40">
+			<geom type="box" name="r thigh" center="0 -1.5 0" color="1 0 1" rotation="0 0 0" scale="1 3 1"/>
+			<node type="hinge" name="r knee" center="0 -3 0" axis="1 0 0" limits="0 90">
+				<geom type="box" name="r leg" center="0 -1 0" color="0 0 1" rotation="0 0 0" scale="0.8 2 0.8"/>
+				<node type="ballxyz" name="r achilles" center="0 -2 0" xlimits="-20 20" ylimits="-20 20" zlimits="-10 10">
+					<geom type="box" name="r foot" center="0 -0.25 0.75" scale="0.5 0.5 2" rotation="0 0 0" color="1 0 0"/>
+				</node>
+			</node>
+		</node>
+
+		<node type="hinge" name="body l thigh" center="1.5 0 0" axis="1 0 0" limits="-90 40">
+			<geom type="box" name="l thigh" center="0 -1.5 0" color="1 0 1" rotation="0 0 0" scale="1 3 1"/>
+			<node type="hinge" name="l knee" center="0 -3 0" axis="1 0 0" limits="0 90">
+				<geom type="box" name="l leg" center="0 -1 0" color="0 0 1" rotation="0 0 0" scale="0.8 2 0.8"/>
+				<node type="ballxyz" name="l achilles" center="0 -2 0" xlimits="-20 20" ylimits="-20 20" zlimits="-10 10">
+					<geom type="box" name="l foot" center="0 -0.25 0.75" scale="0.5 0.5 2" rotation="0 0 0" color="1 0 0"/>
+				</node>
+			</node>
+		</node>
+		
+	</node>
+</doc>
