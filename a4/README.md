@@ -2,31 +2,30 @@ Hello,
 
 To whom it may concern:
 Name: Elias AL Homsi
-id: 260797449
 
-Whats included:
+## Whats included:
 
-1) This Readme file.
-2) source code
-3) a4 data which contains the xml and obj files
-4) pictures
+1. This Readme file.
+2. source code
+3. a4 data which contains the xml and obj files
+4. pictures
 
 
-Description of image/xml pair:
+## Description of image/xml pair:
 
-AACheckerPlane.xml: provided with the assignmnet, checker plane
-BoxRGBLights.xml: provided with the assignment, a box with 3 lights of 3 different colors on each visible face
-BoxStacks.xml: provided with the assignment, a collection of 4 pillars done with stack of boxes (use of multi threading here).
-Cornell.xml: provided with the assignment:  a room with a box and a sphere with lighting.
-MetaBalls.xml attempt to render MetaBalls using raymarching which is very very very slow. define a simple metaball
-NovelScene.xml: a bunny on the side with two pillars of a box with a sphere on top. 
-Plane2.xml: provided with the assignmnet,shows a plane with two circles
-Plane.xml: provided with the assignmnet, shows an empty plane (similar to the first part but with larger resolution)
-Sphere.xml:  provided with the assignmnet, just a sphere.
-TorusMesh.xml:  provided with the assignmnet, using torus.obj
-TwoSpheresPlane.xml:  provided with the assignmnet, two spheres on a chess like background.
+- AACheckerPlane.xml: provided with the assignmnet, checker plane
+- BoxRGBLights.xml: provided with the assignment, a box with 3 lights of 3 different colors on each visible face
+- BoxStacks.xml: provided with the assignment, a collection of 4 pillars done with stack of boxes (use of multi threading here).
+- Cornell.xml: provided with the assignment:  a room with a box and a sphere with lighting.
+- MetaBalls.xml attempt to render MetaBalls using raymarching which is very very very slow. define a simple metaball
+- NovelScene.xml: a bunny on the side with two pillars of a box with a sphere on top. 
+- Plane2.xml: provided with the assignmnet,shows a plane with two circles
+- Plane.xml: provided with the assignmnet, shows an empty plane (similar to the first part but with larger resolution)
+- Sphere.xml:  provided with the assignmnet, just a sphere.
+- TorusMesh.xml:  provided with the assignmnet, using torus.obj
+- TwoSpheresPlane.xml:  provided with the assignmnet, two spheres on a chess like background.
 
-Extras: 
+## Extras: 
 
 1. multi-threaded parallelization (0.5 marks)
 the renderer would only output when all pixels are ready. meanwhile the screen would stay white.
